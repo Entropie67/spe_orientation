@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset = "UTF-8">
+    <title> Spé Orientation </title>
+    <link rel="stylesheet" href = "stylequiz.css">
+</head>
+
+<body>
+    <div id = "header">
+    <h1>SPE ORIENTATION</h1>
+    </div>
+
+
+    <!-- Q1 -->
+    <div class="question">
+        <p>Aimes-tu résoudre des problèmes ?</p>
+        <select id="probleme-resoudre">
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+        </select>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question">
+        <p>Sur une échelle de 0 à 4 a quel niveau prends-tu du plaisir à lire ?</p>
+        <input type="range" id="plaisir_lecture" min="0" max="4">
+    </div>
+    
+    <!-- Q3 -->
+    <div class = "question">
+        <p>sur une échelle de 0 à 4 a quel niveau es-tu à l'aise lorsque tu parles devant un grand public ?</p>
+            <input type="range" id="eloquence" min="0" max="4">
+    </div>
+    
+     
+    <!-- Q4 -->
+    <div class = "question">
+         <p>Aimes-tu apprendre par coeur ?</p>
+             <input type="range" id="app_coeur" min="0" max="4">
+     </div>
+
+
+    <!-- Q5 -->
+    <div class="question">
+        <p>Ecoutes-tu plutôt ta logique ou tes sentiments ?</p>
+        <select id="logique_sentiments">
+            <option value="logique">Logique</option>
+            <option value="sentiments">Sentiments</option>
+        </select>
+    </div>
+
+    <!-- Q6 -->
+    <div class = "question">
+        <p>Suis-tu l'actualité en dehors des réseaux sociaux ?</p>
+            <input type="range" id="actualite" min="0" max="4">
+    </div>
+
+
+    <!-- Q7 -->
+    <div class = "question">
+        <p>Sur une échelle de 0 à 4, à quel point a quelle fréquence te questionnes-tu sur la réalisation des films que tu regardes?</p>
+            <input type="range" id="film_realisation" min="0" max="4">  
+    </div>
+
+    <!-- Q8 -->
+    <div class = "question">
+        <p>Sur une échelle de 0 à 4, à quel point as-tu des qualités de rédaction ?</p>
+            <input type="range" id="qualite_redaction" min="0" max="4">
+    </div>
+   
+    <!-- Q9-->
+    <div class = "question">
+        <p>Lors d'un débat tu préfères-tu participer ou écouter ?</p>
+          <select id="travaux_groupes">
+            <option value="ecouter">écouter</option>
+            <option value="participer">participer</option>
+          </select>
+     </div>
+
+
+    <!-- Q10 -->
+    <div class = "question">
+        <p>Sur un echelle de 1 à 4 à quel point t'intéresses-tu au monde numérique et aux nouvelles technologies ?</p>
+            <input type="range" id="numerique_et_technologies" min="0" max="4">
+    </div>
+
+    <!-- Q11 -->
+    <div class = "question">
+        <p> Sur une échelle de 0 à 4, à quel point es-tu attirer par les défis intellectuels ?</p>
+            <input type="range" id="defi_intellectuel" min="0" max="4">
+    </div>
+   
+    <!-- Q12 -->
+    <div class = "question">
+        <p>Sur une echelle de 0 à 4, à quel point prends-tu du plaisir à programmer ?</p>
+            <input type="range" id="programmer" min="0" max="4">
+    </div>
+
+    <!-- Q13 -->
+     <div class = "question">
+       <p>Aimes-tu les travaux de groupes ?</p>
+         <select id="travaux_groupes">
+           <option value="oui">oui</option>
+           <option value="non">non</option>
+         </select>
+    </div>
+
+    <!-- Q14 -->
+    <div class = "question">
+        <p>Sur une échelle de 0 à 4, à quel point t'intéresses tu à la mécanique et aux activités manuelles ?</p>
+            <input type="range" id="mecanique" min="0" max="4">
+    </div>
+
+    <!-- Q15 -->
+    <div class = "question">
+        <p>Sur une échelle de 0 à 4, à quelle fréquence regardes-tu les films en VO ?</p>
+            <input type="range" id="films_VO" min="0" max="4">
+    </div>
+ 
+   <!-- Q16 -->
+   <div class = "question">
+    <p>Sur une échelle de 0 à 4, à quel point es-tu attaché a la routine ?</p>
+        <input type="range" id="routine" min="0" max="4">
+</div>
+
+    <button id = "button" class="button" role="button" onclick="evaluerResultats()">Soumettre</button>
+
+    <button id="button_2" class="button_2" role="button">
+        <a href="DESCRIPTIONS.html">
+            <h4>En savoir plus</h4>
+        </a>
+    </button>
+</div> 
+
+
+<div id="resultats"></div>
+<script src="Questions.js"></script>
+</body>
+</html>

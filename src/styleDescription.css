@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(129, 172, 78);
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    letter-spacing: 20px;
+    font-weight:bolder;
+    font-size: 60px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align :center
+}
+
+body {
+    background-color: rgb(129, 172, 78);
+    text-align: left;
+}
+
+
+
+.textes{
+    color:black 0.1em 0.1em 0.2em;
+    text-align:left;
+}
+
+
