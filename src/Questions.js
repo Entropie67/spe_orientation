@@ -129,12 +129,28 @@ function evaluerResultats() {
     /******************************* */
     /*           resultats           */
     /******************************* */
-    let divResultats = document.getElementById('resultats');
-    divResultats.innerHTML += '<h2>Tes résultats :</h2>';
-    for (let spe in specialites){
-        divResultats.innerHTML += `<p>En ${spe} tu as obtenu le score de : ${specialites[spe]} points`;
+    
+    // Fonction pour mettre à jour l'affichage des résultats
+    function afficherResultats() {
+        let divResultats = document.getElementById('resultats');
+        divResultats.innerHTML = '<h2>Tes résultats :</h2>';
+        
+        // Trier les spécialités par score décroissant
+        let specialitesTries = Object.keys(specialites).sort((a, b) => specialites[b] - specialites[a]);
 
-
+        for (let spe of specialitesTries){
+            let score = specialites[spe];
+            divResultats.innerHTML += `
+                <div class="resultat-item">
+                    <h3>${spe}</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: ${score}%"></div>
+                    </div>
+                    <p>Score: ${score}</p>
+                </div>`;
+        } 
+    }
+    afficherResultats()
     window.reload = function() {
         document.getElementById('probleme_resoudre').value = 0;  
         document.getElementById('plaisir_lecture').value = 0;
@@ -150,5 +166,5 @@ function evaluerResultats() {
         document.getElementById('defi_intellectuel').value = 0;
         document.getElementById('routine').value = 0;
     };
-    }
+    
 }

@@ -66,3 +66,36 @@ h1 {
 footer {
     position: absolute;
 }
+
+
+/* affichage résultats */
+
+#resultats {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.resultat-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.resultat-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 3px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+}
