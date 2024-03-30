@@ -1,0 +1,1 @@
+Le code est commenté et aucune démarche particulière est attendue pour l'installer.
